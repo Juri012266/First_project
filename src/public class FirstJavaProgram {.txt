@@ -1,0 +1,63 @@
+public class FirstJavaProgram {
+
+
+    public static void main(String[] args) {
+        System.out.println("Hello World,%s!");
+        System.out.println("Hello World," + args[0] + "!");
+    }
+
+    public static class Lesson1 {
+        public static void main(String[] args) {
+            System.out.println(min(12, 3));
+            System.out.println(abs(-8));
+        }
+
+        // TODO leia 2 arvu miinimum väärtus
+        // Näited:
+        // min (3, 5) = 3
+        // min (-3, 8) = -3
+        public static int min(int a, int b) {
+            if (a > b) {
+                return b;
+            } else {
+                return a;
+            }
+        }
+
+        // TODO: Leia arvu absoluutväärtus
+        // Näited:
+        // abs(3) = 3
+        // abs(-5) = 5
+        public static int abs(int x) {
+            if (x > 0) {
+                return x;
+            } else {
+                return -x;
+            }
+        }
+
+
+        // TODO: Luua funktsioon, mis tagastab vastava arvu alati negatiivsena
+        // Näited:
+        // neg(0) = 0
+        // neg(-1) = -1
+        // neg(8) = -8
+        public static int neg(int x) {
+            if (x > 0) {
+                return (-x);
+            } else {
+                return (x);
+            }
+        }// TODO: Luua funktsioon, mis
+
+        // Juhul kui a on paaris arv, siis jaga sisend 2
+        // Juhul kui a on paaritu arv, siis korruta sisend 3 ja liida 1
+        public static int seq3n(int a) {
+            if (a / 2 == 0) {
+                return (a / 2);
+            } else {
+                return (a * 3 + 1);
+            }
+        }
+
+    }
